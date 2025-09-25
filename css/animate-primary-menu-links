@@ -1,0 +1,40 @@
+/* animate primary menu links */
+.primary-menu a {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.primary-menu a:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.primary-menu a:hover {
+  color: #000000;
+}
+
+.primary-menu a:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+body {
+  color: black;
+}
+
+.entry-content a[href] {
+  color: blue;
+  transition: transform 0.2s ease-in-out;
+}
+
+.entry-content a[href]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
