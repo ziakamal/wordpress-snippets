@@ -1,0 +1,4 @@
+/* Hide WordPress Admin Bar */
+#wpadminbar {
+  display: none !important;
+}
